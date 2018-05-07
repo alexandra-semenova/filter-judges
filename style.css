@@ -24,25 +24,9 @@ html, body {
 }
 
 .container {
-	max-width: 65%;
-	margin: auto;
-	padding: 20px;
-}
-
-h1, h2 {
-	font-family: 'Lora', serif;
-}
-
-p {
-	font-size: 1.5em;
-	max-width: 65%;
-	font-family: 'Poppins', sans-serif;
-}
-
-figcaption{
-	font-size: 1.5em;
-	max-width: 65%;
-	font-family: 'Poppins', sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .item {
@@ -50,27 +34,18 @@ figcaption{
     width: 50%;
     padding: 5px;
     float: left;
-    min-height: 185px;
+    min-height: 369px;
     text-align: center;
 }
 
 .item.active {
     display: block;
-}
-
-.item img {
-    display: block;
-    width: 50%;
+    line-height: .05;
 }
 
 img {
-  display: block;
-  width: 100%;
-  max-width:500px;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: auto;
+    display: block;
+    width: 100%;
 }
 
 select {
