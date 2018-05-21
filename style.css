@@ -21,6 +21,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'Abel', sans-serif;
 }
 
 .container {
@@ -31,26 +32,51 @@ html, body {
 
 .item {
     display: none;
-    width: 50%;
+    width: 33%;
     padding: 5px;
     float: left;
-    min-height: 369px;
-    text-align: center;
+    min-height: 280px;
+
+    position: relative;
 }
 
 .item.active {
     display: block;
-    line-height: .05;
+line-height: 0.8;
 }
 
+.description{
+position: absolute;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.grants{
+  color: #333;
+}
+
+.denials{
+  color: red;
+}
+
+h1{
+  font-weight: 700
+}
+
+h3{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
 img {
     display: block;
     width: 100%;
 }
 
-select {
-    display: block;
+.filter {
     width: 100%;
+    height: 3em;
+    background-color: #ccc;
+
 }
 
 
@@ -60,10 +86,21 @@ select {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
     .item {
         width: 33%;
-        min-height: 310px;
+        min-height: 380px;
+        padding: 20px;
     }
-    select {
+    .item.active {
+
+        line-height: .05;
+    }
+    .filter {
         width: 33%;
+    }
+    .description{
+    position: absolute;
+    margin-left: 10px;
+
+    display: block;
     }
 }
 
